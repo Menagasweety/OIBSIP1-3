@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>TempConvert Pro | Dual Unit Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="converter-card">
+  <div class="card-header">
+    <div class="brand">
+      <i class="fas fa-temperature-high"></i>
+      <span>TempConvert</span>
+    </div>
+    <div class="time-badge" id="liveClock">--:--</div>
+  </div>
+
+  <div class="title-section">
+    <h1>
+      <i class="fas fa-exchange-alt"></i>
+      Temperature Converter
+    </h1>
+    <div class="sub">Precision conversion · Real-time formula</div>
+  </div>
+
+  <!-- Value input -->
+  <div class="value-section">
+    <div class="value-label">ENTER VALUE</div>
+    <div class="value-input-wrapper">
+      <input type="text" id="tempValue" placeholder="0" value="32" autocomplete="off" />
+    </div>
+  </div>
+
+  <!-- From / To units -->
+  <div class="dual-units">
+    <div class="unit-box">
+      <div class="unit-label"><i class="fas fa-arrow-right-from-bracket"></i> FROM</div>
+      <select id="fromUnit" class="unit-select">
+        <option value="celsius">🌡️ Celsius (°C)</option>
+        <option value="fahrenheit" selected>🔥 Fahrenheit (°F)</option>
+        <option value="kelvin">❄️ Kelvin (K)</option>
+      </select>
+    </div>
+    <div class="unit-box">
+      <div class="unit-label"><i class="fas fa-arrow-right-to-bracket"></i> TO</div>
+      <select id="toUnit" class="unit-select">
+        <option value="celsius" selected>🌡️ Celsius (°C)</option>
+        <option value="fahrenheit">🔥 Fahrenheit (°F)</option>
+        <option value="kelvin">❄️ Kelvin (K)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Result panel -->
+  <div class="result-premium">
+    <div class="result-header">
+      <span>CONVERTED RESULT</span>
+      <span class="conversion-flow" id="conversionFlowLabel">℉ → ℃</span>
+    </div>
+    <div id="resultValue">— —</div>
+    <div class="formula-note" id="formulaDisplay">
+      <i class="fas fa-chart-simple"></i>
+      <span id="formulaText">(°F – 32) × 5/9 = °C</span>
+    </div>
+  </div>
+
+  <div id="errorArea"></div>
+
+  <button class="btn-convert" id="convertAction">
+    <i class="fas fa-calculator"></i>
+    Convert Now
+    <i class="fas fa-arrow-right"></i>
+  </button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
