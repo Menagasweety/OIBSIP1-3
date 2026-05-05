@@ -18,7 +18,7 @@ A modern, responsive temperature converter built with HTML, CSS, and JavaScript 
 
 
 ## 🌐 Live Demo
-(Add GitHub Pages link after deployment)
+https://menagasweety.github.io/OIBSIP1-3/
 
 ## 📌 Author
 Menaga Krishnamurthy.
