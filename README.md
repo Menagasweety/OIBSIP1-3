@@ -14,10 +14,11 @@ A modern, responsive temperature converter built with HTML, CSS, and JavaScript 
 - JavaScript
 
 ## 📸 Preview
-(Add screenshot here)
+<img width="1482" height="984" alt="image" src="https://github.com/user-attachments/assets/9350df93-1bc0-46b5-bb9c-71df05d7c4f5" />
+
 
 ## 🌐 Live Demo
 (Add GitHub Pages link after deployment)
 
 ## 📌 Author
-Your Name
+Menaga Krishnamurthy.
